@@ -17,15 +17,15 @@
     <div class="nav">
       <div class="btn btn__1">
         <i class="fa-solid fa-cat"></i>
-        <p>Add new cat</p>
+        <p>Добавить</p>
       </div>
       <div class="btn btn__3">
         <i class="fa-solid fa-pen-to-square"></i>
-        <p>Edit cat</p>
+        <p>Изменить</p>
       </div>
       <div class="btn btn__2">
         <i class="fa-solid fa-trash-can"></i>
-        <p>Delete cat</p>
+        <p>Удалить</p>
       </div>
     </div>
     <main class="container"></main>
@@ -43,16 +43,29 @@
           <form id="add">
             <div class="row">
               <label for="i1">Кличка</label>
-              <input type="text" id="i1" name="name" required />
+              <input
+                placeholder="Введите кличку"
+                type="text"
+                id="i1"
+                name="name"
+                required
+              />
             </div>
             <div class="row">
               <label for="i2">Порядковый номер</label>
-              <input type="text" id="i2" name="id" required min="1" />
+              <input
+                placeholder="Введите номер"
+                type="text"
+                id="i2"
+                name="id"
+                required
+                min="1"
+              />
             </div>
             <div class="row">
               <label for="i3">Ссылка на фото</label>
               <input
-                placeholder="Only 1920*1080px please"
+                placeholder="1920*1080 пикс"
                 type="text"
                 id="i3"
                 name="img_link"
@@ -61,7 +74,7 @@
             <div class="row">
               <label for="i4">Возраст</label>
               <input
-                placeholder="1-15 years"
+                placeholder="1-15 лет"
                 type="number"
                 id="i4"
                 name="age"
@@ -88,7 +101,11 @@
             </div>
             <div class="row">
               <label for="i7">Описание</label>
-              <textarea id="i7" name="description"></textarea>
+              <textarea
+                placeholder="Пару слов о коте"
+                id="i7"
+                name="description"
+              ></textarea>
             </div>
             <button type="submit">Добавить</button>
           </form>
