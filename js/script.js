@@ -1,7 +1,7 @@
 import Api from "./api.js"; // импортировали API из вайла api.js
 
 let user = document.cookie;
-console.log(user);
+// console.log(user);
 if (!user) {
   user = prompt("Пользователь не найден, укажите имя пользователя", "found377");
   document.cookie = `user=${user}`;
@@ -20,7 +20,7 @@ let catsList = localStorage.getItem("cats");
 if (catsList) {
   catsList = JSON.parse(catsList);
 }
-console.log(catsList);
+// console.log(catsList);
 
 const addForm = document.forms.add;
 addForm.addEventListener("submit", function (e) {
