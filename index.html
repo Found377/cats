@@ -6,6 +6,10 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500;1,700&display=swap");
     </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/d8d0e88669.js"
       crossorigin="anonymous"
@@ -28,14 +32,16 @@
         <p>Удалить</p>
       </div>
     </div>
+    <!-- панель навигации -->
+
     <main class="container"></main>
+    <!-- сюда рендерятся карточки с котами -->
 
     <div class="popup-wrapper">
       <div class="popup" data-type="card">
         <div class="close">+</div>
         <div class="content"></div>
       </div>
-
       <div class="popup" data-type="add">
         <div class="close">+</div>
         <div class="content">
@@ -111,7 +117,6 @@
           </form>
         </div>
       </div>
-
       <div class="popup" data-type="info">
         <div class="close">+</div>
         <div class="content">
@@ -119,6 +124,7 @@
         </div>
       </div>
     </div>
+    <!-- разметка для ПопАпов -->
 
     <script src="js/functions.js"></script>
     <script src="js/script.js" type="module"></script>
