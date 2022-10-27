@@ -109,6 +109,9 @@ body {
 }
 
 .rate {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 90px;
   padding-left: 30px;
   font-size: 20px;
   display: flex;
@@ -211,4 +214,8 @@ h2 {
 
 .popup h2 {
   margin-bottom: 30px;
+}
+
+.rate__star {
+  width: 18px;
 }
