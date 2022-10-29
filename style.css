@@ -133,7 +133,8 @@ body {
 
 .popup {
   padding: 30px;
-  background-color: #ffe0bd;
+  background-color: #a8a9af;
+  border: #6d6e72 solid 1px;
   border-radius: 8px;
   width: 350px;
   box-sizing: border-box;
@@ -146,8 +147,9 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  border: #ffffff solid 1px;
   background-color: #ee6c6c;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +162,8 @@ body {
 }
 
 .popup > .close:hover {
-  transform: rotate(45deg) scale(1.08, 1.08);
+  transform: rotate(45deg) scale(1.1, 1.1);
+  font-size: 50px;
 }
 
 .popup h2 {
@@ -174,7 +177,7 @@ body {
   font-family: "Montserrat";
   height: 35px;
   background-color: rgb(224, 224, 224);
-  border: 1px solid black;
+  border: 1px solid #6d6e72;
   border-radius: 3px;
 }
 

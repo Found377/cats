@@ -1,6 +1,6 @@
 import Api from "./api.js"; // импортировали API из вайла api.js
 
-let user = document.cookie;
+let user = document.cookie; // диалоговок окно при первичном входе на страницу
 if (!user) {
   user = prompt("Пользователь не найден, укажите имя пользователя", "found377");
   document.cookie = `user=${user}`;

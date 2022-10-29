@@ -1,12 +1,15 @@
+// Формируем блок main, добавляя карточки с информацией с севера
+
 const createCard = (data, parent, arr) => {
   const card = document.createElement("div");
   card.className = "card";
   card.setAttribute("data-id", data.id);
-  const age = document.createElement("div");
+
+  const age = document.createElement("div"); // возраст цифрой
   age.className = "age";
   age.innerText = data.age || "no";
 
-  const rate = document.createElement("div");
+  const rate = document.createElement("div"); // рейтинг звёздочками
   rate.className = "rate";
   for (let i = 0; i < data.rate; i++) {
     let rateStar = document.createElement("span");
@@ -16,18 +19,18 @@ const createCard = (data, parent, arr) => {
     rate.append(rateStar);
   }
 
-  const pic = document.createElement("div");
+  const pic = document.createElement("div"); // фото кота
   pic.className = "pic";
   pic.style.backgroundImage = `url(${
     data.img_link ||
     "https://e7.pngegg.com/pngimages/518/657/png-clipart-kitten-cat-drawing-cartoon-kitten-mammal-face.png"
   })`;
 
-  const name = document.createElement("div");
+  const name = document.createElement("div"); // кличка кота
   name.className = "name";
   name.innerText = data.name;
 
-  card.append(pic, age, rate, name);
+  card.append(pic, age, rate, name); // показываем кота в попапе (не могу придумать, мало нейронных связей в мозгу ='( )
   card.addEventListener("click", function () {
     showPopup(arr, "card");
   });
@@ -41,6 +44,7 @@ const showPopup = (list, type, content) => {
 };
 
 const addCat = (e, api, popupList, store) => {
+  // функционал кнопки "Добавить" из навигации
   e.preventDefault();
   let body = {}; // {name: "Vasya", id: 1, ...}
   for (let i = 0; i < e.target.elements.length; i++) {
